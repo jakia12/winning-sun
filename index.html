@@ -20,7 +20,7 @@
         .bg-img {
             background-image: url('./images/winningsun.jpg');
             /* Replace with your image URL */
-            background-size: cover;
+            /* background-size: cover; */
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
@@ -51,9 +51,16 @@
             top: 70%;
             left: 80%;
         }
+        .sprinkle4 {
+            top: 80%;
+            left: 70%;
+        }
+        .sprinkle5 {
+            top: 50%;
+            left: 40%;
+        }
 
         .dextools-button {
-            margin: 20px;
             background-color: #FF4500;
             border-radius: 25px;
             padding: 15px 30px;
@@ -64,6 +71,9 @@
         }
 
         @media (max-width: 768px) {
+            .bg-img{
+                background-size: contain;
+            }
             .sprinkle-logo {
                 width: 40px;
                 height: 40px;
@@ -95,18 +105,24 @@
     <div class="bg-img">
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md custom-nav navbar-custom">
+        <nav class="navbar navbar-expand-md navbar-custom fixed-top">
             <div class="container">
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a style="color: black;" class="nav-link" href="https://t.me/areyouwinningsuntron">Telegram</a>
+                            <a class="nav-link" href="#">Telegram</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: black;" class="nav-link" href="ttlink">Twitter</a>
+                            <a class="nav-link" href="#">Twitter</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: black;" class="nav-link" href="chartlink">Chart</a>
+                            <a class="nav-link" href="#">Dextools</a>
                         </li>
                     </ul>
                 </div>
@@ -115,18 +131,24 @@
 
         <!-- Sprinkle Tron Logos -->
         
-        <a href="#" class="sprinkle-logo sprinkle1">
+        <a class="sprinkle-logo sprinkle1">
             <img style="width: 100px;" src="./images/tron.png" alt="Sprinkle Logo"> <!-- Replace with Sprinkle Tron logo -->
         </a>
-        <a href="#" class="sprinkle-logo sprinkle2">
+        <a class="sprinkle-logo sprinkle2">
             <img style="width: 100px;" src="./images/tron.png" alt="Sprinkle Logo">
         </a>
-        <a href="#" class="sprinkle-logo sprinkle3">
+        <a class="sprinkle-logo sprinkle3">
+            <img style="width: 100px;" src="./images/tron.png" alt="Sprinkle Logo">
+        </a>
+        <a class="sprinkle-logo sprinkle4">
+            <img style="width: 100px;" src="./images/tron.png" alt="Sprinkle Logo">
+        </a>
+        <a class="sprinkle-logo sprinkle5">
             <img style="width: 100px;" src="./images/tron.png" alt="Sprinkle Logo">
         </a>
 
         <!-- Dextools Button -->
-        <div class="text-center">
+        <div style="padding-top: 10%;" class="text-center bottom-button">
             <a href="chartlink" class="dextools-button">Dextools</a>
         </div>
 
